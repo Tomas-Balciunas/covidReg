@@ -8,7 +8,7 @@
         <?php if (!empty($list)) : ?>
             <table>
                 <tr>
-                    <th><a href="/visma/list?sort=name">Name</a></th>
+                    <th>Name</th>
                     <th>Email</th>
                     <th>Phone Nr.</th>
                     <th>Personal ID</th>
