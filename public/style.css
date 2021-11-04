@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+}
+
+.app {
+    display: flex;
+    flex-flow: column;
+    width: 10em;
+}
+
+.app > input, select {
+    margin-bottom: 1em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row;
+}
+
+.buttons > form {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+
+

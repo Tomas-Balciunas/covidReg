@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "name": "Visma",
+        "description": "Visma",
+        "psr-4": {
+            "Visma\\": "app"
+        }
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.19"
+    }
+}
