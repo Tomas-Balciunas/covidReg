@@ -199,6 +199,8 @@ class Tasks
         exit;
     }
 
+//------------------------------------------------ export a csv list of all appointments ----------------------------------------------
+
     public function export()
     {
         try {
@@ -224,6 +226,8 @@ class Tasks
         fpassthru($f);
         exit;
     }
+
+//-------------------------------------- import a csv list ----------------------------------------------------------
 
     public function import()
     {
@@ -273,7 +277,10 @@ class Tasks
         }
     }
 
-    public function fetchData() {
+//-------------------------- lists all appointments ----------------------------------------------
+
+    public function fetchData()
+    {
         try {
             $query = "SELECT * FROM visma.appointments ORDER BY date_time ASC";
             $prepare = $this->pdo->prepare($query);
@@ -283,6 +290,8 @@ class Tasks
             throw $msg;
         }
     }
+
+//-------------------------- checks whether same personal id exists ------------------------------------------
 
     public function validate($e)
     {

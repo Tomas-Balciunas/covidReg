@@ -10,7 +10,7 @@ class DB
     private static $connection = 'mysql:127.0.0.1';
     private static $user = 'root';
     private static $password = '';
-    private static $db = 'vismaa';
+    private static $db = 'visma';
     private static $options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
     ];

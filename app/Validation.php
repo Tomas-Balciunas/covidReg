@@ -1,24 +1,15 @@
-<?php 
+<?php
 
 namespace Visma;
 
 date_default_timezone_set('Europe/Vilnius');
 
 use PDO;
-use PDOException;
 
 class Validation
 {
 
     private static $errors = [];
-
-    protected $pdo;
-
-    public function __construct($pdo)
-    {
-        $this->pdo = $pdo;
-        $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-    }
 
     public static function appointment($post)
     {
@@ -68,7 +59,7 @@ class Validation
 
         if (!$val) {
             Validation::$errors['personal'] = 'Personal ID must consist of 11 digits';
-        }  else {
+        } else {
             Validation::$errors['personal'] = '';
         }
     }
@@ -83,13 +74,5 @@ class Validation
         } else {
             Validation::$errors['date'] = '';
         }
-    }
-
-    public function checkId($e) {
-        $query = "SELECT from visma.appointments WHERE personal_id = :personalId";
-        $prepare = $this->pdo->prepare($query);
-        $prepare->bindParam(':personalId', $e, PDO::PARAM_INT);
-        $prepare->execute();
-        return $prepare->fetch(PDO::FETCH_ASSOC);
     }
 }
