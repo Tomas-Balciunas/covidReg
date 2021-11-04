@@ -18,6 +18,7 @@ if (isset($_POST['edit'])) {
     if (empty(implode('', $validation))) {
         $task = new Tasks($connection);
         $task->createEdit($_POST, $id);
+        header('Location:/visma/search');
     } else {
         foreach ($validation as $error) {
             echo '<p>' . $error . '</p>';

@@ -70,13 +70,7 @@ class Tasks
         $this->editPhone = $e['phoneNumber'];
         $this->editId = $e['personalId'];
         $this->editDate = $e['date'] . ' ' . $e['time'];
-        $exists = $this->validate($e['personalId']);
-        if (!$exists) {
-            $this->edit();
-            header('Location:/visma/search');
-        } else {
-            echo '<p>Appointment with this personal ID already exists</p>';
-        }
+        $this->edit();
     }
 
     public function edit()
@@ -199,7 +193,7 @@ class Tasks
         exit;
     }
 
-//------------------------------------------------ export a csv list of all appointments ----------------------------------------------
+    //------------------------------------------------ export a csv list of all appointments ----------------------------------------------
 
     public function export()
     {
@@ -227,7 +221,7 @@ class Tasks
         exit;
     }
 
-//-------------------------------------- import a csv list ----------------------------------------------------------
+    //-------------------------------------- import a csv list ----------------------------------------------------------
 
     public function import()
     {
@@ -277,7 +271,7 @@ class Tasks
         }
     }
 
-//-------------------------- lists all appointments ----------------------------------------------
+    //-------------------------- lists all appointments ----------------------------------------------
 
     public function fetchData()
     {
@@ -291,7 +285,7 @@ class Tasks
         }
     }
 
-//-------------------------- checks whether same personal id exists ------------------------------------------
+    //-------------------------- checks whether same personal id exists ------------------------------------------
 
     public function validate($e)
     {

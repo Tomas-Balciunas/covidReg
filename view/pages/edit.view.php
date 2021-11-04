@@ -24,16 +24,16 @@
 
             <span>Time</span>
             <select name="time">
-                <option value="08:00" <?= $date[1] == '08:00:00' ? 'selected' : ''; ?>>08:00</option>
-                <option value="09:00" <?= $date[1] == '09:00:00' ? 'selected' : ''; ?>>09:00</option>
-                <option value="10:00" <?= $date[1] == '10:00:00' ? 'selected' : ''; ?>>10:00</option>
-                <option value="11:00" <?= $date[1] == '11:00:00' ? 'selected' : ''; ?>>11:00</option>
-                <option value="12:00" <?= $date[1] == '12:00:00' ? 'selected' : ''; ?>>12:00</option>
-                <option value="13:00" <?= $date[1] == '13:00:00' ? 'selected' : ''; ?>>13:00</option>
-                <option value="14:00" <?= $date[1] == '14:00:00' ? 'selected' : ''; ?>>14:00</option>
-                <option value="15:00" <?= $date[1] == '15:00:00' ? 'selected' : ''; ?>>15:00</option>
-                <option value="16:00" <?= $date[1] == '16:00:00' ? 'selected' : ''; ?>>16:00</option>
-                <option value="17:00" <?= $date[1] == '17:00:00' ? 'selected' : ''; ?>>17:00</option>
+                <option value="08:00:00" <?= $date[1] == '08:00:00' ? 'selected' : ''; ?>>08:00</option>
+                <option value="09:00:00" <?= $date[1] == '09:00:00' ? 'selected' : ''; ?>>09:00</option>
+                <option value="10:00:00" <?= $date[1] == '10:00:00' ? 'selected' : ''; ?>>10:00</option>
+                <option value="11:00:00" <?= $date[1] == '11:00:00' ? 'selected' : ''; ?>>11:00</option>
+                <option value="12:00:00" <?= $date[1] == '12:00:00' ? 'selected' : ''; ?>>12:00</option>
+                <option value="13:00:00" <?= $date[1] == '13:00:00' ? 'selected' : ''; ?>>13:00</option>
+                <option value="14:00:00" <?= $date[1] == '14:00:00' ? 'selected' : ''; ?>>14:00</option>
+                <option value="15:00:00" <?= $date[1] == '15:00:00' ? 'selected' : ''; ?>>15:00</option>
+                <option value="16:00:00" <?= $date[1] == '16:00:00' ? 'selected' : ''; ?>>16:00</option>
+                <option value="17:00:00" <?= $date[1] == '17:00:00' ? 'selected' : ''; ?>>17:00</option>
             </select>
 
             <input type="submit" name="edit" value="Complete">

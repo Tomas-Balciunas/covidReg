@@ -1,6 +1,6 @@
 <?php session_start();
 
-header("Cache-Control: max-age=300, must-revalidate");
+header("Cache-Control: must-revalidate");
 
 use Visma\DB;
 use Visma\Tasks;

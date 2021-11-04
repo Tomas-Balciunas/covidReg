@@ -13,7 +13,6 @@
                     <th>Phone Nr.</th>
                     <th>Personal ID</th>
                     <th>Date</th>
-                    <th>Control</th>
                 </tr>
                 <?php foreach ($list as $item) : ?>
                     <tr>
@@ -22,7 +21,6 @@
                         <td><?= $item['phone_number']; ?></td>
                         <td><?= $item['personal_id']; ?></td>
                         <td><?= $item['date_time']; ?></td>
-                        <td><a href="/visma/appointment/<?= $item['id']; ?>">Edit</a>&nbsp;<a href="/visma/delete/<?= $item['id']; ?>">Delete</a></td>
                     </tr>
                 <?php endforeach; ?>
             </table>
